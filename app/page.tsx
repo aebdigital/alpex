@@ -115,26 +115,6 @@ const gallery = [
     alt: "Pohľad na prevádzku ALPEX od chodníka",
     className: "md:row-span-2",
   },
-  {
-    src: "/images/workshop-lift-side.jpg",
-    alt: "Vozidlo v servisnej hale",
-    className: "",
-  },
-  {
-    src: "/images/exterior-street.jpg",
-    alt: "Uličný pohľad na vstup do servisu ALPEX",
-    className: "md:row-span-2",
-  },
-  {
-    src: "/images/exterior-doors.jpg",
-    alt: "Tri servisné brány pre geometriu, diagnostiku a pneuservis",
-    className: "md:col-span-2",
-  },
-  {
-    src: "/images/exterior-premio-front.jpg",
-    alt: "Detail vstupu Suzuki servis a dielňa ALPEX",
-    className: "md:col-span-2",
-  },
 ];
 
 const localBusinessJsonLd = {
