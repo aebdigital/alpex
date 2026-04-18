@@ -298,7 +298,7 @@ export default function Home() {
           </div>
         </HeroParallax>
 
-        <div className="relative z-10 -mt-[12svh] overflow-hidden rounded-t-[28px] shadow-[0_-26px_70px_rgba(21,23,26,0.18)]">
+        <div className="relative z-10 -mt-[100svh] overflow-hidden rounded-t-[28px] shadow-[0_-26px_70px_rgba(21,23,26,0.18)]">
 
         <section className="bg-graphite py-5 text-white">
           <div className="section-shell grid gap-4 sm:grid-cols-3">

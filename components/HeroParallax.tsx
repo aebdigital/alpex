@@ -11,7 +11,6 @@ type HeroParallaxProps = {
 export function HeroParallax({ children }: HeroParallaxProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -27,19 +26,18 @@ export function HeroParallax({ children }: HeroParallaxProps) {
 
       const section = sectionRef.current;
       const image = imageRef.current;
-      const content = contentRef.current;
 
-      if (!section || !image || !content) {
+      if (!section || !image) {
         return;
       }
 
       const rect = section.getBoundingClientRect();
       const travel = Math.max(1, section.offsetHeight - window.innerHeight);
       const progress = Math.min(1, Math.max(0, -rect.top / travel));
+      const shift = Math.min(220, Math.max(130, window.innerHeight * 0.22));
+      const translateY = progress * shift - shift * 0.5;
 
-      image.style.transform = `translate3d(0, ${progress * 76}px, 0) scale(1.08)`;
-      content.style.transform = `translate3d(0, ${progress * 30}px, 0)`;
-      content.style.opacity = `${1 - progress * 0.2}`;
+      image.style.transform = `translate3d(0, ${translateY}px, 0) scale(1.05)`;
     };
 
     const requestUpdate = () => {
@@ -62,20 +60,23 @@ export function HeroParallax({ children }: HeroParallaxProps) {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative z-0 h-[104svh] bg-graphite text-white">
+    <section ref={sectionRef} className="relative z-0 h-[200svh] bg-graphite text-white">
       <div className="sticky top-0 h-svh overflow-hidden">
-        <div ref={imageRef} className="absolute inset-0 will-change-transform">
+        <div
+          ref={imageRef}
+          className="absolute inset-x-0 -inset-y-[16%] will-change-transform"
+        >
           <Image
             src="/images/exterior-premio-doors.jpg"
             alt="Prevádzka ALPEX Group v Bratislave"
             fill
             priority
-            className="scale-110 object-cover opacity-[0.72]"
+            className="object-cover opacity-[0.72]"
             sizes="100vw"
           />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(21,23,26,0.86),rgba(21,23,26,0.48),rgba(21,23,26,0.1))]" />
-        <div ref={contentRef} className="relative z-10 will-change-transform">
+        <div className="relative z-10">
           {children}
         </div>
       </div>
