@@ -110,11 +110,6 @@ const gallery = [
     alt: "Vstup do servisu Suzuki a Premio",
     className: "",
   },
-  {
-    src: "/images/exterior-sidewalk.jpg",
-    alt: "Pohľad na prevádzku ALPEX od chodníka",
-    className: "md:row-span-2",
-  },
 ];
 
 const localBusinessJsonLd = {
