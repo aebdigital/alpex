@@ -54,7 +54,7 @@ export default function GdprPage() {
               <p>Hrdličkova 15, 811 01 Bratislava</p>
               <p>IČO: 17330068</p>
               <p>DIČ: 2020342225</p>
-              <p>IČ DPH: SK2020342225</p>
+              <p>IČ DPH: SK2020342225, podľa §4, registrácia od 1.6.1993</p>
             </div>
           </article>
 

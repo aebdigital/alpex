@@ -120,18 +120,22 @@ const localBusinessJsonLd = {
   url: "https://alpex.sk",
   image: "https://alpex.sk/images/exterior-premio-doors.jpg",
   description:
-    "Profesionálny autoservis v Bratislave s mechanickými prácami, pneuservisom, elektrikárskymi opravami, diagnostikou a prípravou na STK.",
+    "Profesionálny autoservis v Malackách s mechanickými prácami, pneuservisom, elektrikárskymi opravami, diagnostikou a prípravou na STK.",
   telephone: "+421911078758",
   email: "servis@alpex.sk",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Hrdličkova 15",
-    postalCode: "811 01",
-    addressLocality: "Bratislava",
+    streetAddress: "Stupavská 2961",
+    postalCode: "901 01",
+    addressLocality: "Malacky",
     addressCountry: "SK",
   },
   vatID: "SK2020342225",
   areaServed: [
+    {
+      "@type": "City",
+      name: "Malacky",
+    },
     {
       "@type": "City",
       name: "Bratislava",
@@ -248,7 +252,7 @@ export default function Home() {
           <div className="section-shell flex min-h-svh items-center pb-24 pt-28">
             <div className="max-w-3xl">
               <p className="mb-5 inline-flex rounded-[8px] border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-sunline backdrop-blur">
-                Autoservis Bratislava
+                Autoservis Malacky
               </p>
               <h1 className="font-[var(--font-display)] text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">
                 Alpex Autoservis
@@ -287,7 +291,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-sunline" />
-              <span className="text-sm font-semibold">Hrdličkova 15, Bratislava</span>
+              <span className="text-sm font-semibold">Stupavská 2961, Malacky</span>
             </div>
           </div>
         </section>
@@ -407,7 +411,7 @@ export default function Home() {
               </div>
               <p className="max-w-xl text-sm leading-7 text-white/70">
                 Reálne zábery z prevádzky, dielne, pneuservisu a servisných brán
-                ALPEX Group v Bratislave.
+                ALPEX Group v Malackách.
               </p>
             </div>
 
@@ -440,9 +444,15 @@ export default function Home() {
                 Objednať termín
               </h2>
               <div className="mt-8 space-y-6 text-stone-700">
-                <div>
-                  <p className="font-bold text-graphite">ALPEX Group s. r. o.</p>
-                  <p className="mt-2 leading-7">Hrdličkova 15<br />811 01 Bratislava</p>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <h3 className="font-bold text-graphite uppercase text-xs tracking-wider">Adresa servisu</h3>
+                    <p className="mt-2 leading-7 italic">Stupavská 2961<br />901 01 Malacky</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-graphite uppercase text-xs tracking-wider">Sídlo spoločnosti</h3>
+                    <p className="mt-2 leading-7">Hrdličkova 15<br />811 01 Bratislava</p>
+                  </div>
                 </div>
                 <div className="leading-7">
                   <p>Zodpovedná osoba: Martin Hanák</p>
@@ -462,7 +472,7 @@ export default function Home() {
                 <div className="leading-7">
                   <p>IČO: 17330068</p>
                   <p>DIČ: 2020342225</p>
-                  <p>IČ DPH: SK2020342225</p>
+                  <p>IČ DPH: SK2020342225, podľa §4, registrácia od 1.6.1993</p>
                 </div>
               </div>
             </div>

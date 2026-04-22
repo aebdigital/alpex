@@ -19,21 +19,22 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ALPEX Autoservis Bratislava | Pneuservis, diagnostika a STK",
-    template: "%s | ALPEX Autoservis Bratislava",
+    default: "ALPEX Autoservis Malacky | Pneuservis, diagnostika a STK",
+    template: "%s | ALPEX Autoservis Malacky",
   },
   description:
-    "Profesionálny autoservis ALPEX Group v Bratislave. Mechanické práce, pneuservis, elektrikárske opravy, diagnostika a spoľahlivá príprava vozidla na STK.",
+    "Profesionálny autoservis ALPEX Group v Malackách. Mechanické práce, pneuservis, elektrikárske opravy, diagnostika a spoľahlivá príprava vozidla na STK.",
   applicationName: "ALPEX Autoservis",
   keywords: [
-    "autoservis Bratislava",
+    "autoservis Malacky",
     "ALPEX autoservis",
-    "pneuservis Bratislava",
+    "pneuservis Malacky",
+    "pneuservis Stupavská",
     "diagnostika vozidiel",
     "príprava na STK",
     "mechanické práce",
     "elektrikárske práce auto",
-    "Hrdličkova Bratislava",
+    "Alpex Malacky",
   ],
   authors: [{ name: "ALPEX Group s. r. o." }],
   creator: "AEB Digital",
@@ -45,24 +46,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "sk_SK",
     url: "/",
-    siteName: "ALPEX Autoservis Bratislava",
-    title: "ALPEX Autoservis Bratislava | Pneuservis, diagnostika a STK",
+    siteName: "ALPEX Autoservis Malacky",
+    title: "ALPEX Autoservis Malacky | Pneuservis, diagnostika a STK",
     description:
-      "Autoservis v Bratislave s viac ako 20 rokmi skúseností. Mechanické práce, pneuservis, elektrikárske opravy a príprava na STK.",
+      "Autoservis v Malackách s viac ako 20 rokmi skúseností. Mechanické práce, pneuservis, elektrikárske opravy a príprava na STK.",
     images: [
       {
         url: "/images/exterior-premio-doors.jpg",
         width: 1200,
         height: 630,
-        alt: "Prevádzka ALPEX Group v Bratislave",
+        alt: "Prevádzka ALPEX Group v Malackách",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ALPEX Autoservis Bratislava | Pneuservis, diagnostika a STK",
+    title: "ALPEX Autoservis Malacky | Pneuservis, diagnostika a STK",
     description:
-      "Mechanické práce, pneuservis, elektrikárske opravy a príprava na STK v Bratislave.",
+      "Mechanické práce, pneuservis, elektrikárske opravy a príprava na STK v Malackách.",
     images: ["/images/exterior-premio-doors.jpg"],
   },
   robots: {
